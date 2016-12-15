@@ -1,0 +1,244 @@
+<html>
+
+<!--
+  http://googlecode.blogspot.fi/2012/02/image-results-now-available-from-custom.html
+-->
+
+<head>
+  <title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript">
+/*
+    var images = [
+"http://4.bp.blogspot.com/-78_bE0vJdhk/UAe8Dq4oCVI/AAAAAAAAHCg/BGkJXsyeYyc/s1600/Hdhut.blogspot.com+(10).jpg",
+"http://1.bp.blogspot.com/-IaonsqK6A2w/UEhp6Cgp5EI/AAAAAAAABEU/YDcmA8lrYKU/s1600/awesome-water-flow-jungle-mountain-nature-images.jpg",
+"http://papers.co/wallpaper/papers.co-md41-wallpaper-yosemite-mountain-nature-1-wallpaper.jpg",
+"http://wallup.net/wp-content/uploads/2016/01/207455-landscape-mountain-nature-736x459.jpg",
+"http://thewallpaper.co/wp-content/uploads/2016/02/Mountain-Stream-organic-plants-widescreen-nature-images-download-nature-wallpapers-nature-wallpapers-for-windows-green-fresh-health-1504x1128-736x459.jpg",
+"http://youmeandtrends.com/wp-content/uploads/2015/10/ice-mountains-nature-winter-snow-1920x1200-wallpaper_www.wall321.com_13.jpg",
+"http://www.stockwallpaper.net/wp-content/uploads/2016/01/Trees-Fall-Mountain-Nature-Wallpaper-480x640.jpg",
+"http://2.bp.blogspot.com/-QmVOOrO8Z9k/T8UKXqEibnI/AAAAAAAAAv0/ZShOYhfK6b4/s640/Top-10-Best-Nature-Scene-HD-wallpaper-02-beautiful-mountain.jpg",
+"http://wallup.net/wp-content/uploads/2016/01/110324-mountain-nature-736x459.jpg",
+"http://thewallpaper.co/wp-content/uploads/2016/02/beautiful-mountain-landscapes-cool-nature-wallpapers-amazing-landscape-organic-widescreen-nature-images-download-nature-wallpapers-nature-wallpapers-for-windows-green-fresh-1579x987-736x459.jpg",
+"http://thewallpaper.co/wp-content/uploads/2016/02/beautiful-mountain-landscapes-cool-nature-wallpapers-amazing-landscape-organic-widescreen-nature-images-download-nature-wallpapers-nature-wallpapers-for-windows-green-fresh-1579x987-736x459.jpg",
+"https://dncache-mauganscorp.netdna-ssl.com/thumbseg/1380/1380468-bigthumbnail.jpg",
+"http://wallpaperrs.com/uploads/nature/thumbs/earth-mountain-nature-landscape-sunset-blue-beach-sky-ice-sunray-lake-delightful-wallpaper-90950-142978355622.jpg",
+"https://dncache-mauganscorp.netdna-ssl.com/thumbseg/21/21162-bigthumbnail.jpg",
+"http://hd.wallpaperswide.com/thumbs/mountain_lake_sunset_nature-t2.jpg",
+"http://wallpaperswide.com/download/mountain_lake_sunset_nature-wallpaper-480x800.jpg",
+"http://wallup.net/wp-content/uploads/2015/12/154227-landscape-mountain-nature-snow-reflection-lake-sunlight-trees-736x459.jpg",
+"http://wallpapersonthe.net/wallpapers/b/480x800/480x800-green_river_sky_tree_mountain_nature_bridge_river-29412.jpg",
+"http://wallup.net/wp-content/uploads/2016/01/303757-landscape-mountain-nature-736x459.jpg",
+"http://www.stockwallpaper.net/wp-content/uploads/2016/01/Trees-Fall-Mountain-Nature-Wallpaper-640x480.jpg",
+"http://wallpapersonthe.net/wallpapers/b/480x800/480x800-summer_perfect_lake_sky_lake_cloud_tree_mountain_nature-2251.jpg",
+"http://thewallpaper.co/wp-content/uploads/2016/02/mountain-lake-cool-nature-wallpapers-organic-widescreen-nature-images-download-nature-wallpapers-nature-wallpapers-for-windows-green-fresh-health-1805x1128-736x459.jpg",
+"http://hd.wallpaperswide.com/thumbs/mountains_landscape_nature_51-t2.jpg",
+"http://thewallpaper.co/wp-content/uploads/2016/02/clear-nature-mountain-amazing-landscape-organic-plants-widescreen-nature-images-download-nature-wallpapers-nature-wallpapers-for-windows-green-health-1805x1128-736x459.jpg",
+"http://2.bp.blogspot.com/-D5K-utVoJv4/UAe8RzdhZpI/AAAAAAAAHDI/6isiFQtxcjQ/s1600/Hdhut.blogspot.com+(15).jpg",
+"http://free4kwallpaper.com/wp-content/uploads/2016/01/Amazing-Mountains-Nature-4K-Wallpaper-480x640.jpg",
+"http://www.wallpaperdx.com/photo/anime-girl-model-lake-landscape-mountain-nature-greenery-anime-hd-wallpaper-733-416.jpg",
+"http://wallup.net/wp-content/uploads/2015/12/202351-mountain-nature-landscape-trees-736x459.jpg",
+"http://www.fansshare.com/image/estonia/nature-wallpapers-wallpaper-ultrahd-lan-ape-lake-mountain-nature-resolutions-forest-fog-android-wallpaper-1427273477.jpg",
+"http://iphone6papers.com/wp-content/uploads/papers.co-nb86-mountain-nature-summer-wood-tree-33-iphone6-wallpaper-250x444.jpg",
+"http://www.fansshare.com/image/wallpaperdesktop/beautiful-mountain-nature-is-hd-wallpaper-wallpapers-wallpaper-pretty-nature-wide-desktop-background-direct-hd-download-for-iphone-ipad-borders-free-naruto-mobile-nature-5854692.jpg",
+"http://iphone6papers.com/wp-content/uploads/papers.co-my07-yosemite-mountain-nature-rock-sky-forest-cloud-33-iphone6-wallpaper-250x444.jpg",
+"http://thewallpaper.co/wp-content/uploads/2016/05/scenic-mountain-path-windows-wallpaper-hd-nature-wallpapers-road-hd-1440x900-736x459.jpg",
+"http://2.bp.blogspot.com/_-8ueNRWhLqY/TUqbEv-pAQI/AAAAAAAABpk/AR1Bdd6L-5g/s640/Awesome%2BWinter%2BMountain%2BNature%2BWallpapers%2B%25252813%252529.jpg",
+"http://1.bp.blogspot.com/-amfL9HVyqGM/UEhcpa677OI/AAAAAAAAA6o/_v7dNzQNAs4/s1600/mountains-water-nature-backgrounds-images-02.jpg",
+"http://www.fansshare.com/image/hdwallpapersformobile/mountain-lake-widescreen-wallpaper-hd-resolution-dlwallhd-hd-computer-desktop-wallpaper-wallpapers-pack-phone-hot-girl-for-ps-abstract-nature-hd-nature-wallpapers-for-mobile-1414301260.jpg",
+"http://wallup.net/wp-content/uploads/2015/12/193362-island-limestone-sea-turquoise-water-tropical-Thailand-clouds-cliff-mountain-nature-landscape-736x459.jpg",
+"http://thewallpaper.co/wp-content/uploads/2016/05/wooden-pier-up-the-mountain-nature-desktop-wallpaper-wallpaper-free-widescreen-1920x1200-736x459.jpg",
+"http://wallpapersonthe.net/wallpapers/b/480x800/480x800-lavender_lavender_fields_mountain_nature_field-2818.jpg",
+"http://www.wallpaperswide.us/wp-content/uploads/2016/03/mountain-forest-green-nature-wallpaper-480x800.jpg",
+"http://wallup.net/wp-content/uploads/2016/01/287156-sun_rays-cottage-mountain-nature-snowy_peak-grass-landscape-morning-shrubs-clouds-736x459.jpg",
+"http://thewallpaper.co/wp-content/uploads/2016/02/clear-mountain-water-amazing-landscape-organic-plants-widescreen-nature-images-download-nature-wallpapers-nature-wallpapers-for-windows-green-health-1805x1015-736x459.jpg",
+"http://wallup.net/wp-content/uploads/2015/12/202346-mountain-nature-landscape-snow-736x459.jpg",
+"http://thewallpaper.co/wp-content/uploads/2016/10/Photos-Gallery-High-Quality-mountains-nature-desktop-wallpapers-high-definition-monitor-download-free-amazing-background-photos-artwork-5184x3456-736x459.jpg",
+"http://www.fansshare.com/image/wallpaperforiphone/wallpaper-yosemite-mountain-nature-iphone-plus-wallpaper-wallpaper-2035245474.jpg",
+"http://wallup.net/wp-content/uploads/2016/01/286137-turquoise-water-river-Chile-mountain-nature-forest-rafting-snowy_peak-summer-landscape-736x459.jpg",
+"http://papers.co/wallpaper/papers.co-nb86-mountain-nature-summer-wood-tree-1-wallpaper.jpg",
+"http://wallup.net/wp-content/uploads/2016/02/18/297999-mountain-nature-736x459.jpg",
+"https://4.bp.blogspot.com/-IZ2DTm-FoYY/UAe8CNYDHKI/AAAAAAAAHCY/A0ZX0vc6T0w/s640/Hdhut.blogspot.com+(1).jpg",
+"http://wallup.net/wp-content/uploads/2016/01/149113-mountain-nature-panoramas-France-Mont_Blanc-736x459.jpg",
+"http://thewallpaper.co/wp-content/uploads/2016/02/mountain-sunset-cool-nature-wallpapers-organic-plants-widescreen-nature-images-download-nature-wallpapers-nature-wallpapers-for-windows-green-fresh-1805x1128-736x459.jpg"
+    ];
+    window.onload = function() {
+        window.alert("Got " + images.length + " images");
+        startSlideshow();
+        startClock();
+    };
+*/
+    var MAX_IMAGES = 100;
+    var SLIDESHOW_DELAY = 1000 * 15;
+    var GOOGLE_API_KEY = "xxx";
+    var GOOGLE_CUSTOM_SEARCH_KEY = "yyy";
+    var SEARCH_TAGS = "mountain+nature+wallpapers";
+
+    var images = [];
+    window.onload = function() {
+      loadImages(0);
+    };
+    function loadImages(startIndex) {
+        if (images.length < MAX_IMAGES) {
+          var searchUrl = "https://www.googleapis.com/customsearch/v1"
+            + "?key=" + GOOGLE_API_KEY
+            + "&cx=" + GOOGLE_CUSTOM_SEARCH_KEY
+            + "&q=" + SEARCH_TAGS
+            + "&searchType=image&fileType=jpg&imgSize=large&alt=json";
+          if (startIndex > 0) {
+            searchUrl += "&start=" + startIndex;
+          }
+          $.getJSON(searchUrl)
+          .done(function(data) {
+            for (i = 0; i < data.items.length; ++i) {
+              images.push(data.items[i].link);
+            }
+            loadImages(startIndex + data.items.length);
+          })
+          .fail(function() {
+            window.alert("Failed to load images. We have " + images.length + "images.");
+            if (images.length > 0) {
+              startSlideshow();
+              startClock();
+            }
+          });
+        } else {
+          window.alert("Got " + images.length + " images");
+          startSlideshow();
+          startClock();
+        }
+    }
+
+    function startSlideshow() {
+      setImage();
+      setInterval(setImage, SLIDESHOW_DELAY);
+    }
+
+    var backImage = 0;
+    var topImage = 1;
+    var currentImage = 0;
+    function setImage() {
+      var imageSrc = images[currentImage];
+      backImage = topImage;
+      topImage = 1 - backImage;
+      document.getElementById('image' + topImage).src = imageSrc;
+      document.getElementById('image' + topImage).style.opacity = 1;
+      document.getElementById('image' + backImage).style.opacity = 0;
+      currentImage = (currentImage + 1) % images.length;
+    }
+
+    function startClock() {
+      updateClock();
+      setInterval(updateClock, 1000 * 60);
+    }
+
+    function updateClock() {
+      var days = [
+        "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+      ];
+      var today = new Date();
+      var hour = today.getHours();
+      var ampm = "AM";
+      if (12 <= hour && hour <= 23) {
+        ampm = "PM";
+      }
+      if (hour > 12) {
+        hour = hour - 12;
+      }
+      var minute = today.getMinutes();
+      if (minute < 10) {
+        minute = "0" + minute;
+      }
+      document.getElementById("clock").innerHTML = hour + ":" + minute;
+      document.getElementById("ampm").innerHTML = "AM";
+
+      var months = [
+        "January", "February", "March", "April", "May" ,"June", "July", "August",
+        "September", "October", "November", "December"
+      ];
+      var dayName = days[today.getDay()];
+      var monthName = months[today.getMonth()];
+      var dayOfMonth = today.getDate();
+      document.getElementById("date").innerHTML = dayName + ", " + monthName + " " + dayOfMonth;
+    }
+
+  </script>
+
+  <style>
+    body {
+      background-color: black;
+    }
+    #container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      left:0;
+      right:0;
+      top:0;
+      bottom:0;
+      margin:auto;
+      display: block;
+      transition: opacity 1s linear;
+      animation-name: imagescaling;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+    @keyframes imagescaling {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+    #image0 {
+      z-index: 1;
+    }
+    #image1 {
+      z-index: 2;
+    }
+    #clock {
+      position: absolute;
+      right: 5%;
+      bottom: 14%;
+      font-size: 4vw;
+      color: rgba(255,255,255,0.7);
+      z-index: 3;
+    }
+    #ampm {
+      position: absolute;
+      right: 3%;
+      bottom: 18.5%;
+      font-size: 1vw;
+      color: rgba(255,255,255,0.7);
+      z-index: 3;
+    }
+    #date {
+      position: absolute;
+      right: 5%;
+      bottom: 10%;
+      font-size: 2vw;
+      color: rgba(255,255,255,0.7);
+      z-index: 3;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="container">
+    <img id="image0"></img>
+    <img id="image1"></img>
+    <div id="clock"></div>
+    <div id="ampm"></div>
+    <div id="date"></div>
+  </div>
+</body>
+
+</html>
+
